@@ -1,0 +1,202 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The file is maintained by [Release Please](https://github.com/googleapis/release-please) based on [Conventional Commits](https://www.conventionalcommits.org) specification,
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.0.18](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.17...interfaces-v0.0.18) (2023-09-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* set peer-exchange with default bootstrap ([#1469](https://github.com/waku-org/js-waku/issues/1469))
+* refactor store protocol for readability ([#1456](https://github.com/waku-org/js-waku/issues/1456))
+* remove filter v1 ([#1433](https://github.com/waku-org/js-waku/issues/1433))
+* upgrade to libp2p@0.45 ([#1400](https://github.com/waku-org/js-waku/issues/1400))
+* filter v2 ([#1332](https://github.com/waku-org/js-waku/issues/1332))
+* add and implement IReceiver ([#1219](https://github.com/waku-org/js-waku/issues/1219))
+
+### Features
+
+* Add 1MB restriction to LightPush and Relay ([#1351](https://github.com/waku-org/js-waku/issues/1351)) ([72f97d4](https://github.com/waku-org/js-waku/commit/72f97d4545512f92936b1a9b50fa0b53f8603f9d))
+* Add and implement IReceiver ([#1219](https://github.com/waku-org/js-waku/issues/1219)) ([e11e5b4](https://github.com/waku-org/js-waku/commit/e11e5b4870aede7813b3ee4b60f5e625f6eac5a2))
+* Allow passing of multiple ENR URLs to DNS Discovery & dial multiple peers in parallel ([#1379](https://github.com/waku-org/js-waku/issues/1379)) ([f32d7d9](https://github.com/waku-org/js-waku/commit/f32d7d9fe0b930b4fa9c46b8644e6d21be45d5c1))
+* ConnectionManager extends EventEmitter & exposed on the Waku interface (& minor improvements) ([#1447](https://github.com/waku-org/js-waku/issues/1447)) ([0b8936f](https://github.com/waku-org/js-waku/commit/0b8936f1f1ad33f6cb90eb88d027a19e787ae7a2))
+* **dns-discovery:** Set default for `NodeRequirements` ([#1466](https://github.com/waku-org/js-waku/issues/1466)) ([aab9c08](https://github.com/waku-org/js-waku/commit/aab9c08caefb9f72460261ec0c38df88ae0f02ce))
+* Enable event emission for peer discovery/connection in ConnectionManager ([#1438](https://github.com/waku-org/js-waku/issues/1438)) ([6ce898d](https://github.com/waku-org/js-waku/commit/6ce898d77132f30b5d8f33b48c7f6276992a486e))
+* Expose `meta` on `IDecodedMessage` ([5724bb2](https://github.com/waku-org/js-waku/commit/5724bb2b21367e4e397acbc5530b3a2bf315194e))
+* Filter v2 ([#1332](https://github.com/waku-org/js-waku/issues/1332)) ([8d0e647](https://github.com/waku-org/js-waku/commit/8d0e64796695fbafad0a033552eb4412bdff3d78))
+* Set peer-exchange with default bootstrap ([#1469](https://github.com/waku-org/js-waku/issues/1469)) ([81a52a8](https://github.com/waku-org/js-waku/commit/81a52a8097ba948783c9d798ba362af0f27e1c10))
+* ToSubscriptionIterator impl for IReceiver ([#1307](https://github.com/waku-org/js-waku/issues/1307)) ([7daa9d0](https://github.com/waku-org/js-waku/commit/7daa9d05bf44b33296b56df214f5d5901887a129))
+* Upgrade to libp2p@0.45 ([#1400](https://github.com/waku-org/js-waku/issues/1400)) ([420e6c6](https://github.com/waku-org/js-waku/commit/420e6c698dd8f44d40d34e47d876da5d2e1ce85e))
+
+
+### Miscellaneous Chores
+
+* Refactor store protocol for readability ([#1456](https://github.com/waku-org/js-waku/issues/1456)) ([2389977](https://github.com/waku-org/js-waku/commit/2389977a9840281dff4008c015fe76451c0f0df5))
+* Remove filter v1 ([#1433](https://github.com/waku-org/js-waku/issues/1433)) ([d483644](https://github.com/waku-org/js-waku/commit/d483644a4bb4350df380719b9bcfbdd0b1439482))
+
+## [0.0.17](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.16...interfaces-v0.0.17) (2023-08-02)
+
+
+### Features
+
+* ConnectionManager extends EventEmitter & exposed on the Waku interface (& minor improvements) ([#1447](https://github.com/waku-org/js-waku/issues/1447)) ([0b8936f](https://github.com/waku-org/js-waku/commit/0b8936f1f1ad33f6cb90eb88d027a19e787ae7a2))
+
+## [0.0.16](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.15...interfaces-v0.0.16) (2023-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove filter v1 ([#1433](https://github.com/waku-org/js-waku/issues/1433))
+* upgrade to libp2p@0.45 ([#1400](https://github.com/waku-org/js-waku/issues/1400))
+
+### Features
+
+* Enable event emission for peer discovery/connection in ConnectionManager ([#1438](https://github.com/waku-org/js-waku/issues/1438)) ([6ce898d](https://github.com/waku-org/js-waku/commit/6ce898d77132f30b5d8f33b48c7f6276992a486e))
+* Upgrade to libp2p@0.45 ([#1400](https://github.com/waku-org/js-waku/issues/1400)) ([420e6c6](https://github.com/waku-org/js-waku/commit/420e6c698dd8f44d40d34e47d876da5d2e1ce85e))
+
+
+### Miscellaneous Chores
+
+* Remove filter v1 ([#1433](https://github.com/waku-org/js-waku/issues/1433)) ([d483644](https://github.com/waku-org/js-waku/commit/d483644a4bb4350df380719b9bcfbdd0b1439482))
+
+## [0.0.15](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.14...interfaces-v0.0.15) (2023-06-08)
+
+
+### Features
+
+* Allow passing of multiple ENR URLs to DNS Discovery & dial multiple peers in parallel ([#1379](https://github.com/waku-org/js-waku/issues/1379)) ([f32d7d9](https://github.com/waku-org/js-waku/commit/f32d7d9fe0b930b4fa9c46b8644e6d21be45d5c1))
+
+## [0.0.14](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.13...interfaces-v0.0.14) (2023-05-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* filter v2 ([#1332](https://github.com/waku-org/js-waku/issues/1332))
+
+### Features
+
+* Filter v2 ([#1332](https://github.com/waku-org/js-waku/issues/1332)) ([8d0e647](https://github.com/waku-org/js-waku/commit/8d0e64796695fbafad0a033552eb4412bdff3d78))
+
+## [0.0.13](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.12...interfaces-v0.0.13) (2023-05-18)
+
+
+### Features
+
+* Add 1MB restriction to LightPush and Relay ([#1351](https://github.com/waku-org/js-waku/issues/1351)) ([72f97d4](https://github.com/waku-org/js-waku/commit/72f97d4545512f92936b1a9b50fa0b53f8603f9d))
+* Expose `meta` on `IDecodedMessage` ([5724bb2](https://github.com/waku-org/js-waku/commit/5724bb2b21367e4e397acbc5530b3a2bf315194e))
+
+## [0.0.12](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.11...interfaces-v0.0.12) (2023-05-09)
+
+
+### Features
+
+* ToSubscriptionIterator impl for IReceiver ([#1307](https://github.com/waku-org/js-waku/issues/1307)) ([7daa9d0](https://github.com/waku-org/js-waku/commit/7daa9d05bf44b33296b56df214f5d5901887a129))
+
+## [0.0.11](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.10...interfaces-v0.0.11) (2023-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* add and implement IReceiver ([#1219](https://github.com/waku-org/js-waku/issues/1219))
+
+### Features
+
+* Add and implement IReceiver ([#1219](https://github.com/waku-org/js-waku/issues/1219)) ([e11e5b4](https://github.com/waku-org/js-waku/commit/e11e5b4870aede7813b3ee4b60f5e625f6eac5a2))
+
+## [0.0.10](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.9...interfaces-v0.0.10) (2023-03-24)
+
+
+### Bug Fixes
+
+* **utils:** Include all ts files ([#1267](https://github.com/waku-org/js-waku/issues/1267)) ([c284159](https://github.com/waku-org/js-waku/commit/c284159ac8eab5bed2313fa5bc7fbea0e83d390f))
+
+## [0.0.9](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.8...interfaces-v0.0.9) (2023-03-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* use ISender and deprecate Light Push .push ([#1217](https://github.com/waku-org/js-waku/issues/1217))
+
+### Features
+
+* Add getActiveSubscriptions method ([#1249](https://github.com/waku-org/js-waku/issues/1249)) ([45284db](https://github.com/waku-org/js-waku/commit/45284db963d6d4c90a014391551604c236906b88))
+* Use ISender and deprecate Light Push .push ([#1217](https://github.com/waku-org/js-waku/issues/1217)) ([0f6a594](https://github.com/waku-org/js-waku/commit/0f6a59464426b94dd14841de075ff10a4ad52e33))
+
+## [0.0.8](https://github.com/waku-org/js-waku/compare/interfaces-v0.0.7...interfaces-v0.0.8) (2023-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* add custom events to Relay and make observers private ([#1213](https://github.com/waku-org/js-waku/issues/1213))
+* enable encoding of `meta` field
+* expose pubsub topic in `IDecodedMessage`
+* directly convert from ENR to `PeerInfo`, remove unneeded utility
+* extract encoder code
+* update store.proto
+* update message.proto: payload and content topic are always defined
+* ConnectionManager and KeepAliveManager ([#1135](https://github.com/waku-org/js-waku/issues/1135))
+* bump typescript
+* bump libp2p dependencies
+
+### Features
+
+* Add custom events to Relay and make observers private ([#1213](https://github.com/waku-org/js-waku/issues/1213)) ([275b166](https://github.com/waku-org/js-waku/commit/275b16641e620956a5f8ebbb3a8c4156149d489e))
+* Codec as a property of the protocol implementations ([a5ff788](https://github.com/waku-org/js-waku/commit/a5ff788eed419556e11319f22ca9e3109c81df92))
+* ConnectionManager and KeepAliveManager ([#1135](https://github.com/waku-org/js-waku/issues/1135)) ([24c24cc](https://github.com/waku-org/js-waku/commit/24c24cc27d83ec12de45ef3cf3d00f6eb817e4ca))
+* Enable encoding of `meta` field ([bd983ea](https://github.com/waku-org/js-waku/commit/bd983ea48ee73fda5a7137d5ef681965aeabb4a5))
+* Expose pubsub topic in `IDecodedMessage` ([628ac50](https://github.com/waku-org/js-waku/commit/628ac50d7104ec3c1dff44db58077a85db6b6aa1)), closes [#1208](https://github.com/waku-org/js-waku/issues/1208)
+
+
+### Bug Fixes
+
+* Prettier and cspell ignore CHANGELOG ([#1235](https://github.com/waku-org/js-waku/issues/1235)) ([4d7b3e3](https://github.com/waku-org/js-waku/commit/4d7b3e39e6761afaf5d05a13cc4b3c23e15f9bd5))
+* Remove initialising peer-exchange while creating a node ([#1158](https://github.com/waku-org/js-waku/issues/1158)) ([1b41569](https://github.com/waku-org/js-waku/commit/1b4156902387ea35b24b3d6f5d22e4635ea8cf18))
+
+
+### Miscellaneous Chores
+
+* Bump libp2p dependencies ([803ae7b](https://github.com/waku-org/js-waku/commit/803ae7bd8ed3de665026446c23cde90e7eba9d36))
+* Bump typescript ([12d86e6](https://github.com/waku-org/js-waku/commit/12d86e6abcc68e27c39ca86b4f0dc2b68cdd6000))
+* Directly convert from ENR to `PeerInfo`, remove unneeded utility ([6dbcde0](https://github.com/waku-org/js-waku/commit/6dbcde041ab8fa8c2df75cc25319a0eccf6b0454))
+* Extract encoder code ([22ffcf5](https://github.com/waku-org/js-waku/commit/22ffcf571aa3998267f0f3b59576abc38f3f4281))
+* Update message.proto: payload and content topic are always defined ([5cf8ed2](https://github.com/waku-org/js-waku/commit/5cf8ed2030c9efbc4c4b66aa801827482c1e4249))
+* Update store.proto ([967e6ff](https://github.com/waku-org/js-waku/commit/967e6ffc7ec6f780094e29599c47b723fa222dcc))
+
+## [Unreleased]
+
+### Added
+
+- `multicodec` property on protocol interfaces.
+
+## [0.0.7] - 2023-01-18
+
+### Added
+
+- `IPeerExchange` interface.
+- `IEnr` interface.
+
+## [0.0.6] - 2022-12-15
+
+### Changed
+
+- Add `I` prefix to protocol and messages interfaces.
+- Renamed node interfaces to include `Node`.
+- Renamed `WakuPrivacy` to `RelayNode`.
+
+## [0.0.5] - 2022-11-18
+
+### Added
+
+- Alpha version of `@waku/interfaces`.
+
+[unreleased]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.7...HEAD
+[0.0.7]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.6...@waku/interfaces@0.0.7
+[0.0.6]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.5...@waku/interfaces@0.0.6
+[0.0.5]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.4...@waku/interfaces@0.0.5
+[0.0.4]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.3...@waku/interfaces@0.0.4
+[0.0.3]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.2...%40waku/create@0.0.3
+[0.0.2]: https://github.com/waku-org/js-waku/compare/@waku/interfaces@0.0.1...%40waku/create@0.0.2
+[0.0.1]: https://github.com/status-im/js-waku/compare/a20b7809d61ff9a9732aba82b99bbe99f229b935...%40waku/create%400.0.2
